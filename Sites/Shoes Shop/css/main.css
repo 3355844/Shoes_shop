@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.2em;
+    background-color: #ffffff;
+    color: #555;
+}
+
+p {
+    padding: 0 0 20px 0;
+    line-height: 1.7em;
+}
+
+input, textarea {
+    outline: none;
+    border: solid 1px #f2f2f2;
+    color: #5d5d5d;
+    padding: 8px;
+}
+
+.sidebar input[type="submit"], .sidebar input[type="button"] {
+    border-radius: 15px;
+    background-color: darkslateblue;
+    color: white;
+    width: 80px;
+}
+
+.sidebar input[type="submit"]:hover, .sidebar input[type="button"]:hover {
+    background-color: red;
+}
+
+h1, h2 {
+    font: normal 170% 'cenury gothic', Arial;
+    margin: 0 0 15px 0;
+    padding: 15px 0 5px 0;
+    color: #000000;
+}
+
+h2 {
+    font-size: 140%;
+}
+
+a, a:hover {
+    outline: none;
+    text-decoration: underline;
+    color: #aeb002;
+}
+
+ul {
+    margin: 2px 0 22px 17px;
+}
+
+li {
+    margin: 0 0 6px 0;
+    padding: 0 0 4px 5px;
+    line-height: 1.5em;
+}
+
+hr {
+    border: solid 1px #f3f3f3;
+}
+
+.header {
+    background-image: url("caminar01.jpg");
+
+    height: 177px;
+    font-size: 0.8em;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 900px;
+}
+
+.main, .logo, .menu_bar, .site_content, .footer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    width: 880px;
+    padding-bottom: 40px;
+}
+
+.logo h1, .logo h2 {
+    font: normal 300% 'century gothic', Arial, sans-serif;
+    margin: 0 0 0 9px;
+}
+
+.logo_text h1, .logo_text h1 a, .logo_text h1 a:hover {
+    padding: 22px 0 0 0;
+    color: #fff;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+
+.logo_text h2 {
+    font-size: 0.9em;
+    padding: 4px 0 0 0;
+    color: #999999;
+}
+
+.menu_bar {
+    width: 900px;
+    height: 46px;
+}
+
+ul.menu {
+    float: right;
+}
+
+ul.menu li {
+    float: left;
+    padding: 0 0 0 9px;
+    list-style: none;
+    margin: 1px 2px 0 0;
+}
+
+ul.menu li a {
+    font: normal 100% 'trebuchet ms', sans-serif;
+    display: block;
+    padding: 6px 35px 5px 28px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+ul.menu li.selected a {
+    color: #aeb002;
+}
+
+ul.menu li a:hover {
+    color: #e4ec04;
+}
+
+.site_content {
+    width: 880px;
+    overflow: hidden;
+    margin: 20px auto 0 auto;
+    background-color: white;
+}
+
+.sidebar_container {
+    float: right;
+    width: 224px;
+}
+
+.sidebar {
+    float: right;
+    width: 222px;
+    padding: 5%;
+    margin: 0 0 16px 0;
+    border: solid 1px #f2f2f2;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.btn {
+    padding: 8px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.sidebar h2 {
+    color: #136cb2;
+}
+
+.lables_passreg_text {
+    font-size: 0.7em;
+    margin-top: 3%;
+    margin-left: 2%;
+}
+
+.sidebar ul {
+    margin: 0;
+}
+
+.sidebar ul li {
+    list-style-type: none;
+    margin: 0 0 0 0;
+}
+
+.sidebar .rating_sidebar {
+    float: right;
+}
+
+.rating_sidebar {
+    color: black;
+}
+
+.content {
+    text-align: left;
+    width: 620px;
+    padding: 0 0 0 5px;
+    float: left;
+}
+
+.content a {
+    text-decoration: none;
+}
+
+.new_collection img {
+    width: 22%;
+    border-radius: 5px;
+    border: solid 5px #dad7d5;
+}
+
+.new_collection {
+    margin-bottom: 5%;
+}
+
+.posts .post_content {
+    font-size: 0.8em;
+}
+
+.info_shoes_page {
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.info_shoes_page .label {
+    font-size: 1.2em;
+}
+
+.info_shoes_page .value {
+    font-size: 1em;
+    color: #49945a;
+    margin-right: 3%;
+}
+
+.description_shoes {
+    margin-bottom: 15%;
+}
+
+.description_shoes img {
+    float: left;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    border: solid 5px #dad7d5;
+    width: 40%;
+    margin-right: 2px;
+}
+
+.reviews {
+    margin-bottom: 4%;
+    font-size: 0.9em;
+}
+
+.reviews .review_name {
+    background-color: darkslateblue;
+    color: white;
+    padding: 1%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.reviews .review_text {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+}
+
+.send {
+    margin-bottom: 4%;
+}
+
+.send input[type="text"], textarea, input[type="email"] {
+    border: solid 1px #c3c3c3;
+    margin-bottom: 2%;
+}
+
+.send input[type="text"], input[type="email"] {
+    padding: 1%;
+    width: 98%;
+}
+
+.reviews_mess {
+    margin-bottom: 4%;
+}
+
+.send textarea {
+    padding: 1%;
+    width: 98%;
+    height: 200px;
+}
+
+.send input[type="submit"] {
+    background-color: darkslateblue;
+    padding: 10px;
+    color: white;
+    border-radius: 15px;
+}
+
+.send input[type="submit"]:hover {
+    background-color: red;
+}
+
+.info_shoes {
+    border-radius: 5px;
+    margin-bottom: 5%;
+    background-color: #f9f9f9;
+    padding: 5%;
+    height: 150px;
+}
+
+.info_shoes img {
+    float: left;
+    margin-right: 2%;
+    border-radius: 5px;
+    border: solid 5px #dad7d5;
+    width: 25%;
+}
+
+.button {
+    background-color: darkslateblue;
+    padding: 8px;
+    border-radius: 15px;
+    float: right;
+    margin: 2%;
+    clear: both;
+    font-size: 0.8em;
+}
+
+.button a {
+    color: white;
+}
+
+table {
+    width: 100%;
+    border: solid 2px #f4f4f4;
+    border-radius: 5px;
+}
+
+td {
+    padding: 2%;
+    border: solid 1px #f4f4f4;
+    background-color: #f4f4f4;
+}
+
+td img {
+    width: 60px;
+    vertical-align: middle;
+}
+
+.center {
+    text-align: center;
+}
+
+.table_rating {
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: red;
+}
+
+.footer {
+    align-content: flex-end;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: darkslateblue;
+    color: #a8aa94;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 900px;
+}
+
+.footer a {
+    margin-right: 5px;
+    color: #a8aa94;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #e4ec04;
+    text-decoration: none;
+}
+
+.footer p {
+    padding: 0 0 0 0;
+}
+
+/*css mobile*/
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px) {
+    .header {
+        background-image: url("caminar01.jpg");
+        min-width: 100%;
+        height: 20%;
+        text-align: center;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .site_content {
+        width: 100%;
+    }
+
+    .menu_bar {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    ul.menu {
+        float: none;
+    }
+
+    ul.menu li {
+        margin: 0;
+        padding: 0;
+        float: none;
+    }
+
+    .logo h1 {
+        font: normal 235% 'century gotic', Arial, sans-serif;
+    }
+
+    .logo h2 {
+        font: normal 100% 'century gotic', Arial, sans-serif;
+        color: white;
+    }
+
+    .content h1, h2 {
+        font: normal 100% 'century gotic', Arial;
+    }
+
+    .new_collection img {
+        width: 43%;
+    }
+
+    iframe {
+        width: 88%;
+        height: 100%;
+    }
+
+    .post_content p {
+        line-height: 1.5em;
+        padding: 3%;
+        text-align: left;
+    }
+
+    .posts p {
+        font-size: 120%;
+    }
+
+    /*man.html mobile*/
+    .info_shoes {
+        float: none;
+        height: 100%;
+    }
+
+    .info_shoes img {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
+    .button {
+        float: none;
+    }
+
+    /*rating*/
+    table {
+        margin: 2%;
+        display: block;
+    }
+
+    th {
+        font-size: 110%;
+    }
+
+    td {
+        background-color: white;
+        padding: 0;
+        margin: 0;
+        font-size: 95%;
+        text-align: left;
+    }
+
+    /*shoes.html mobile*/
+    .description_shoes img {
+        float: none;
+        width: 94%;
+        display: block;
+    }
+
+    .description_shoes {
+        margin: 2%;
+        text-align: left;
+    }
+
+    .reviews, .send {
+        width: 96%;
+    }
+
+    .reviews_text {
+        text-align: left;
+    }
+
+    .btn {
+        float: none;
+        width: 95%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
