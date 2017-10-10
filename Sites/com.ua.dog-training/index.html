@@ -16,30 +16,90 @@
 <div class="main">
 
     <div class="nav_bar" id="nav_bar">
-        <span> First column</span>
-        <ul class="menu_buttons">
-            <li class="l_inf"><a class="buttons">3355844@gmail.com</a></li>
-            <li class="selected"><a href="#" class="buttons" id="home">HOME</a></li>
-            <li><a href="#" class="buttons" id="about">ABOUT</a></li>
-            <li><a href="#" class="buttons" id="puppies">PUPPIES</a></li>
-            <li><a href="#" class="buttons" id="news">NEWS</a></li>
-            <li><a href="#" class="buttons" id="dogFood">DOG FOOD</a></li>
-            <li><a href="#" class="buttons" id="contacts">CONTACTS</a></li>
-            <li class="r_inf"><a class="buttons">+3(8093) 33-55-844</a></li>
-        </ul>
-        <span>Last column</span>
+        <span>LEFT</span>
+        <span class="menu_buttons">
+            <span class="l_inf"><a class="buttons">3355844@gmail.com</a></span>
+            <span class="selected"><a href="#" class="buttons" id="home">HOME</a></span>
+            <span><a href="#" class="buttons" id="about">ABOUT</a></span>
+            <span><a href="#" class="buttons" id="puppies">PUPPIES</a></span>
+            <span><a href="#" class="buttons" id="news">NEWS</a></span>
+            <span><a href="#" class="buttons" id="dogFood">DOG FOOD</a></span>
+            <span><a href="#" class="buttons" id="contacts">CONTACTS</a></span>
+            <span class="r_inf"><a class="buttons">+3(8093) 33-55-844</a></span>
+        </span>
+        <span>RIGHT</span>
     </div>
 
     <div class="header">
-        <span class="left_bar" id="leftBar">Left bar</span>
+        <div class="left_bar" id="leftBar">
+            <div class="left_bar_menu" id="left_bar_menu_1">
+                <h1><p><a href="#" onclick="showMenu('left_bar_menu_1')">Training</a></p></h1>
+                <div><a href="#" class="buttons">trainingtraining</a></div>
+                <div><a href="#" class="buttons">training</a></div>
+                <div><a href="#" class="buttons">training</a></div>
+                <div><a href="#" class="buttons">training</a></div>
+            </div>
+            <div class="left_bar_menu" id="left_bar_menu_2">
+                <h1><p><a href="#" onclick="showMenu('left_bar_menu_2')">Training2</a></p></h1>
+                <div><a href="#" class="buttons">trainingtraining2</a></div>
+                <div><a href="#" class="buttons">training2</a></div>
+                <div><a href="#" class="buttons">training2</a></div>
+                <div><a href="#" class="buttons">training2</a></div>
+            </div>
+            <div class="left_bar_menu" id="left_bar_menu_3">
+                <h1><p><a href="#" onclick="showMenu('left_bar_menu_3')">Training3</a></p></h1>
+                <div><a href="#" class="buttons">trainingtraining3</a></div>
+                <div><a href="#" class="buttons">training3</a></div>
+                <div><a href="#" class="buttons">training3</a></div>
+                <div><a href="#" class="buttons">training3</a></div>
+            </div>
+            <div class="left_bar_menu" id="left_bar_menu_4">
+                <h1><p><a href="#" onclick="showMenu('left_bar_menu_4')">Training4</a></p></h1>
+                <div><a href="#" class="buttons">trainingtraining4</a></div>
+                <div><a href="#" class="buttons">training4</a></div>
+                <div><a href="#" class="buttons">training4</a></div>
+                <div><a href="#" class="buttons">training4</a></div>
+            </div>
+            <div class="left_bar_menu">
+                <h1><p><a href="#" onclick="hideAllLeftMenu()">Close</a></p></h1>
+            </div>
+        </div>
         <span class="logo_img" id="logoImg"></span>
         <span class="logo_text" id="logoText">Logo Text from HTML</span>
-        <span class="right_bar" id="rightBar">Right Bar</span>
+        <span class="right_bar" id="rightBar">
+            <div class="register_buttons">
+                <a href="#" class="buttons" onclick="showLoginForm()">Enter</a>
+                <a class="buttons" id="regWin" href="#" onclick="showRegForm()">Register</a>
+            </div>
+            <div class="register_form" id="register_form">
+                <form action="" method="post" onsubmit="regWin()">
+                    <input id="login" type="text" placeholder="Login"/>
+                    <input id="email" type="email" placeholder="Email"/>
+                    <input id="password" type="password" placeholder="Password"/>
+                    <input type="submit" class="buttons" value="Register"/>
+                </form>
+            </div>
+            <div class="login_win" id="login_win">
+                <form action="" method="post" onsubmit="regWin()">
+                    <input id="email_login" type="email" placeholder="Email"/>
+                    <input id="password_login" type="password" placeholder="Password"/>
+                    <input type="submit" class="buttons" value="Enter"/>
+                </form>
+            </div>
+            <div>
+                <form action="" method="get">
+                    <input type="email" class="email" id="email_message" placeholder="Email">
+                    <input type="textarea" class="textarea" placeholder="Message">
+                    <input type="submit" class="buttons" value="Send Message">
+                </form>
+            </div>
+        </span>
     </div>
 
     <div class="site_content">
         <span class="content" id="content"></span>
     </div>
+
     <div class="footer">
         <a href="https://www.facebook.com/andrei.ponomarenko.18">© Ponomarenko A.M. 2017 </a>
     </div>
