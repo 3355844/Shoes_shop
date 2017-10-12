@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Главный сайт питомника для собак">
     <meta name="keywords" content="дрессировка , содержание собак , купить щенка , щенки , корм для собак ">
@@ -60,22 +59,20 @@
                 <div><a href="#" class="buttons">training4</a></div>
                 <div><a href="#" class="buttons">training4</a></div>
             </div>
-            <div class="left_bar_menu">
-                <h1><p><a href="#" onclick="hideAllLeftMenu()">Close</a></p></h1>
-            </div>
+
         </div>
         <span class="logo_img" id="logoImg"></span>
         <span class="logo_text" id="logoText">Logo Text from HTML</span>
         <span class="right_bar" id="rightBar">
             <div class="register_buttons">
-                <a href="#" class="buttons" onclick="showLoginForm()">Enter</a>
+                <a href="#" class="buttons" id="enter" onclick="showLoginForm()">Enter</a>
                 <a class="buttons" id="regWin" href="#" onclick="showRegForm()">Register</a>
             </div>
             <div class="register_form" id="register_form">
-                <form action="" method="post" onsubmit="regWin()">
-                    <input id="login" type="text" placeholder="Login"/>
-                    <input id="email" type="email" placeholder="Email"/>
-                    <input id="password" type="password" placeholder="Password"/>
+                <form action="" method="post" name="registration" onsubmit="register()">
+                    <input id="login" name="login" type="text" placeholder="Login"/>
+                    <input id="email" name="email" type="email" placeholder="Email"/>
+                    <input id="password" name="password" type="password" placeholder="Password"/>
                     <input type="submit" class="buttons" value="Register"/>
                 </form>
             </div>
@@ -87,11 +84,14 @@
                 </form>
             </div>
             <div>
-                <form action="" method="get">
+                <form id="message_form" onsubmit="addComment()">
                     <input type="email" class="email" id="email_message" placeholder="Email">
-                    <input type="textarea" class="textarea" placeholder="Message">
+                    <input type="textarea" class="textarea" id="text_message" placeholder="Message">
                     <input type="submit" class="buttons" value="Send Message">
                 </form>
+            </div>
+            <div class="comments" id="comments" >
+
             </div>
         </span>
     </div>

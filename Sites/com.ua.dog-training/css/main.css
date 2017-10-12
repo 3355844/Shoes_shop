@@ -102,6 +102,39 @@ span.logo_text {
     margin: 30px;
 }
 
+.comments {
+    padding-bottom: 5px;
+    overflow-y: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 90%;
+    margin-top: 10px;
+    height: 300px;
+    background-color: lightgreen;
+    border: solid;
+    border-radius: 5px;
+}
+
+.comments h4 {
+    bottom: 0;
+    width: 98%;
+    margin-top: 3px;
+    text-align: center;
+    color: black;
+}
+
+.comments a {
+    color: darkblue;
+    width: 100%;
+}
+
+.comments::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #aaa;
+    color: black;
+}
+
 .content {
     display: block;
     margin-left: 20%;
