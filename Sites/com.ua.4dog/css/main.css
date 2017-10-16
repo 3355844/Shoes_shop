@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-image: url("./../img/hosting-header.jpg");
+    background-position: center;
+
+}
+
+.logo a, .logo p1 {
+    color: blue;
+    font-family: 'Trocchi', serif;
+    font-size: 45px;
+    font-weight: normal;
+    line-height: 48px;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.logo img:not(.logo_img) {
+    height: 33px;
+    border: 5px lightgray solid;
+    border-radius: 5px;
+}
+
+p1 {
+    margin-left: 30px;
+}
+
+.social {
+    text-align: left;
+    width: 120px;
+}
+
+.logo img:hover:not(.logo_img) {
+    border: solid 5px blue;
+    background-color: white;
+    /*border: solid;*/
+    /*border-color: greenyellow;*/
+
+}
+
+.logo_img {
+    height: 100px;
+}
+
+/*.logo a:hover {*/
+/*color: green;*/
+/*}*/
+
+.nav {
+    margin-top: 10px;
+    text-align: center;
+
+    /*align:"center";*/
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+.nav p {
+    text-transform: uppercase;
+    width: 90px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav img, .icon {
+    padding: 3px;
+    background-color: white;
+    border: solid 5px black;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.nav img:hover, .icon:hover {
+    background-color: white;
+    padding: 3px;
+    border: solid 5px blue;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    border: solid;
+    padding-top: 10px;
+    overflow: auto;
+    background-image: url("./../img/7494316-dog-background-Stock-Photo.jpg");
+    color: black;
+}
+
+.right_content h2, .right_content p, .left_content h2, .left_content p {
+    background-color: grey;
+    margin: 5px;
+    padding: 5px;
+    border: solid grey;
+    border-radius: 5px;
+    opacity: 0.95;
+}
+
+.right_content h2:hover, .right_content p:hover, .left_content h2:hover, .left_content p:hover {
+    color: blue;
+    border-color: blue;
+    opacity: 1;
+}
+
+.left_content {
+    border: solid;
+    padding-left: 15px;
+    float: left;
+    width: 22%;
+}
+
+.center_content {
+
+border-radius: 5px;
+    padding-left: 10px;
+    background-color: darkgrey;
+    color: black;
+    border: solid;
+    float: left;
+    width: 49%;
+}
+
+.right_content {
+    border: solid;
+    float: left;
+    width: 25%;
+}
+
+.right_content p {
+    padding-left: 20px;
+}
+
+.right_content form {
+    border: solid grey;
+    border-radius: 5px;
+    text-align: center;
+    margin: 2px;
+    width: 97%;
+    background-color: grey;
+}
+
+.right_content form:hover {
+    border-color: blue;
+}
+
+.textarea {
+    height: 40px;
+    text-align: left;
+    color: black;
+}
+
+.button {
+    padding-bottom: 3px;
+    padding-top: 3px;
+    border-radius: 5px;
+    border: solid darkgray;
+    background-color: darkgrey;
+}
+
+.button:hover {
+    border-color: blue;
+    color: blue;
+}
+
+.right_content input {
+    border-radius: 3px;
+    width: 90%;
+    margin: 3px;
+}
+
+.icon_little {
+    border: solid 1px;
+    height: 20px;
+    padding: 2px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.footer {
+    padding-top: 10px;
+    text-align: center;
+    background-color: #555555;
+    height: 50px;
+}
+
+.footer a {
+    color: blue;
+    text-decoration: none;
+}
