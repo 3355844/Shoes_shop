@@ -1,178 +1,96 @@
-body {
+* {
     margin: 0;
     padding: 0;
 }
 
-.header {
-    padding-bottom: 10px;
-    width: 100%;
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+header {
     text-align: center;
-    background-image: url("./../img/hosting-header.jpg");
-    background-position: center;
-
+    height: 100px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    margin-bottom: 60px;
 }
 
-.logo a, .logo p1 {
-    color: blue;
-    font-family: 'Trocchi', serif;
-    font-size: 45px;
-    font-weight: normal;
-    line-height: 48px;
+header a {
     text-decoration: none;
-    margin-right: 30px;
+    color: #136cb2;
+    text-shadow: 4px 4px 4px #aaa;
 }
 
-.logo img:not(.logo_img) {
-    height: 33px;
-    border: 5px lightgray solid;
-    border-radius: 5px;
-}
-
-p1 {
-    margin-left: 30px;
-}
-
-.social {
+section div {
+    margin-top: 2px;
+    box-sizing: border-box;
+    padding: 10px;
     text-align: left;
-    width: 120px;
 }
 
-.logo img:hover:not(.logo_img) {
-    border: solid 5px blue;
-    background-color: white;
-    /*border: solid;*/
-    /*border-color: greenyellow;*/
+h4 {
+    padding-top: 4px;
+    color: blue;
+}
 
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    width: 80px;
+}
+
+.left p {
+    margin: 2px;
+    text-align: left;
+    border: 2px solid darkgrey;
+    border-radius: 4px;
+}
+
+.left p:hover {
+    color: cornflowerblue;
+    border: 2px solid blue;
+    background-color: darkgrey;
+}
+
+.ins_menu {
+    /*display: none;*/
+}
+
+#video {
+    opacity: 0.3;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -99;
 }
 
 .logo_img {
-    height: 100px;
+    width: 100px;
 }
 
-/*.logo a:hover {*/
-/*color: green;*/
-/*}*/
-
-.nav {
-    margin-top: 10px;
-    text-align: center;
-
-    /*align:"center";*/
-}
-
-.nav ul {
-    padding: 0;
-    margin: 0;
-}
-
-.nav li {
-    display: inline-block;
-    list-style: none;
-}
-
-.nav p {
-    text-transform: uppercase;
-    width: 90px;
-    margin: 0;
-    padding: 0;
-}
-
-.nav img, .icon {
-    padding: 3px;
-    background-color: white;
-    border: solid 5px black;
-    border-radius: 5px;
-    height: 35px;
-}
-
-.nav img:hover, .icon:hover {
-    background-color: white;
-    padding: 3px;
-    border: solid 5px blue;
-}
-
-.fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-.content {
-    border: solid;
-    padding-top: 10px;
-    overflow: auto;
-    background-image: url("./../img/7494316-dog-background-Stock-Photo.jpg");
-    color: black;
-}
-
-.right_content h2, .right_content p, .left_content h2, .left_content p {
-    background-color: grey;
-    margin: 5px;
-    padding: 5px;
-    border: solid grey;
-    border-radius: 5px;
-    opacity: 0.95;
-}
-
-.right_content h2:hover, .right_content p:hover, .left_content h2:hover, .left_content p:hover {
-    color: blue;
-    border-color: blue;
-    opacity: 1;
-}
-
-.left_content {
-    border: solid;
-    padding-left: 15px;
-    float: left;
-    width: 22%;
-}
-
-.center_content {
-
-border-radius: 5px;
-    padding-left: 10px;
+#top_nav {
+    color: white;
     background-color: darkgrey;
-    color: black;
-    border: solid;
-    float: left;
-    width: 49%;
-}
-
-.right_content {
-    border: solid;
-    float: left;
-    width: 25%;
-}
-
-.right_content p {
-    padding-left: 20px;
-}
-
-.right_content form {
-    border: solid grey;
-    border-radius: 5px;
     text-align: center;
-    margin: 2px;
-    width: 97%;
-    background-color: grey;
-}
-
-.right_content form:hover {
-    border-color: blue;
-}
-
-.textarea {
-    height: 40px;
-    text-align: left;
-    color: black;
+    width: 100%;
+    top: 110px; /*высота шапки в пикселях*/
+    position: fixed;
+    background-clip: content-box;
 }
 
 .button {
-    padding-bottom: 3px;
-    padding-top: 3px;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
     border-radius: 5px;
-    border: solid darkgray;
-    background-color: darkgrey;
+    border: 2px solid black;
+    background-color: white;
 }
 
 .button:hover {
@@ -180,28 +98,65 @@ border-radius: 5px;
     color: blue;
 }
 
-.right_content input {
-    border-radius: 3px;
-    width: 90%;
-    margin: 3px;
-}
-
-.icon_little {
-    border: solid 1px;
-    height: 20px;
-    padding: 2px;
+.submit {
     background-color: white;
-    border-radius: 5px;
+    border: solid black 2px;
+    border-radius: 4px;
+    padding: 3px;
+    margin-top: 4px;
+    width: 95%;
 }
 
-.footer {
-    padding-top: 10px;
-    text-align: center;
-    background-color: #555555;
-    height: 50px;
-}
-
-.footer a {
+.submit:hover {
+    border: blue 2px solid;
     color: blue;
-    text-decoration: none;
+}
+
+.form {
+    box-sizing: border-box;
+    margin-bottom: 4px;
+    width: 95%;
+    border: solid 2px black;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+textarea {
+    height: 200px;
+}
+
+.left {
+    width: 25%;
+    float: left;
+}
+
+.center {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+}
+
+.right {
+    box-sizing: border-box;
+    margin-top: 2px;
+    width: 25%;
+    float: right;
+}
+
+.inf {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.inf img {
+    width: 100%;
+}
+
+footer {
+    padding: 4px;
+    text-align: center;
+    background-color: darkgrey;
+    overflow: auto;
+    width: 100%;
 }

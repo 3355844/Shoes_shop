@@ -4,83 +4,126 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/functions.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/jQueryMain.js"></script>
     <title>4DOG</title>
 </head>
 <body>
-<div class="main">
-    <div class="header" id="header">
-        <div id="logo">
-            <div class="logo">
-                <span><img class="logo_img" src="img/logo.png" alt="Image logo"></span>
-                <span><p1>Kinologik`s center</p1><a href=""> Luchko Yuriy</a></span>
-                <span><img class="logo_img" src="img/logo_right.png" alt="Image logo"></span>
+<header>
+    <img class="logo_img" src="img/logo.png" alt="Image logo">
+    <a href="">Кинологический центр</a>
+    <img class="logo_img" src="img/logo_right.png" alt="Image logo">
+</header>
 
-            </div>
+<nav class="nav" id="top_nav">
+    <ul>
+        <li class="nav_button" onclick="say(this)"><p class="home">Главная</p><img class="button" src="img/home.png"
+                                                                                   alt="home"></li>
+        <li class="nav_button" onclick="say(this)"><p>Литература</p><img class="button" src="img/books.png" alt="books">
+        </li>
+        <li class="nav_button" onclick="say(this)"><p>Щенки</p><img class="button" src="img/puppy-silhouette.png"
+                                                                    alt="puppy  "></li>
+        <li class="nav_button" onclick="say(this)"><p>Питание</p><img class="button" src="img/food.jpg" alt="feeding">
+        </li>
+        <li class="nav_button" onclick="say(this)"><p>Уход</p><img class="button" src="img/ras4.png" alt="care"></li>
+        <li class="nav_button" onclick="say(this)"><p>Награды</p><img class="button" src="img/oscar.png" alt="rewards">
+        </li>
+        <li class="nav_button" onclick="say(this)"><p>Коментарии</p><img class="button" src="img/chat.jpg"
+                                                                         alt="comments"></li>
+        <li class="nav_button" onclick="say(this)"><p>Контакты</p><img class="button" src="img/contacts_318-62400.jpg"
+                                                                       alt="contacts"></li>
+        <li><img class="button" src="img/vk.png" alt="vk.com "></li>
+        <li><img class="button" src="img/fb.jpg" alt="facebook.com ">
+            <p></p></li>
+        <li><img class="button" src="img/youtube2.png" alt="youtube.com ">
+            <p></p></li>
+        <li></li>
+    </ul>
+</nav>
+<section>
+    <div class="left">
+        <div class="left_button" id="service">
+            <h2><img class="button" src="img/service.jpg" alt="services"> Услуги </h2>
+            <p class="ins_menu">Содержание</p>
+            <p class="ins_menu">Вакцинацыя</p>
+            <p class="ins_menu">Вязка</p>
         </div>
-        <div class="nav" id="nav">
-            <ul>
-                <li><p>Home</p><img src="img/home.png" alt="home"></li>
-                <li><p>Books</p><img src="img/books.png" alt="books"></li>
-                <li><p>upbringing</p><img src="img/dog_play.jpg" alt="upbringing"></li>
-                <li><p>feeding</p><img src="img/food.jpg" alt="feeding"></li>
-                <li><p>care</p><img src="img/ras4.png" alt="care"></li>
-                <li><p>rewards</p><img src="img/oscar.png" alt="rewards"></li>
-                <li><p>contact</p><img src="img/contacts_318-62400.jpg" alt="contacts"></li>
-                <li><img src="img/vk.png" alt="vk.com ">
-                    <p></p></li>
-                <li><img src="img/fb.jpg" alt="facebook.com ">
-                    <p></p></li>
-                <li><img src="img/youtube2.png" alt="youtube.com ">
-                    <p></p></li>
-                <li></li>
-            </ul>
-
+        <div class="left_button" id="dog_command">
+            <h2><img class="button" src="img/dog_comand_sits.jpg" alt="dog command">Дрессировка</h2>
+            <p class="ins_menu">Общий курс дрессировки</p>
+            <p class="ins_menu">Специальный курс дрессировки</p>
+            <p class="ins_menu">Защитно-караульная служба</p>
+        </div>
+        <div class="left_button" id="photo">
+            <h2><img class="button" src="img/photo.png" alt="photo"/> Фото галлерея</h2>
+            <p class="ins_menu">Питомник</p>
+            <p class="ins_menu">Инструктора</p>
+            <p class="ins_menu">Питомцы</p>
+        </div>
+        <div class="left_button" id="video_all">
+            <h2><img class="button" src="img/video.png" alt="video"> Видео</h2>
+            <p class="ins_menu">Общий курс дрессировки</p>
+            <p class="ins_menu">Специальный курс дрессировки</p>
+            <p class="ins_menu">Защитно-караульная служба</p>
         </div>
     </div>
-    <div class="content">
-        <div class="left_content">
-            <h2 id="showscroll" onclick="tada() "><img class="icon" src="img/dog_comand_sits.jpg" alt="dog comand">
-                Trainings</h2>
-            <p>Simple Training</p>
-            <p>Special Trainings</p>
-            <h2><img class="icon" src="img/photo.png" alt="photo"/> Photo</h2>
-            <p>1234</p>
-            <p>1234</p>
-            <h2><img class="icon" src="img/video.png" alt="video"> Video</h2>
-            <p>1234</p>
-            <p>1234</p>
-            <p>1234</p>
+    <div class="center">
+        <div class="inf" id="home">
+            <h2>КИНОЛОГИЧЕСКИЙ ЦЕНТР ЮРИЯ ЛУЧКО</h2>
+            <h3>под патронатом ГУМВД Украины в Киевской области предлагает Вам полный комплекс услуг по воспитанию и
+                содержанию Вашей собаки.</h3>
+            <p>
+                -Ваш питомец нуждается в воспитании или корректировке поведения?<br>
+                -Уезжаете, а пса не с кем оставить?<br>
+                -Подготовить любимца к выставке?<br>
+            </p>
+            <h3>Наши кинологи помогут найти с Вашим питомцем общий язык, решат и исправят проблемы в воспитании.
+                Всегда Рады Вам и Вашим собакам в нашем питомнике!</h3>
+            <img src="img/main_dor.jpg" alt="MainPhoto">
         </div>
-        <div class="center_content">
-            <h2>КИНОЛОГИЧЕСКИЙ ЦЕНТР ЮРИЯ ЛУЧКО
-                <p>
-                    под патронатом ГУМВД Украины в Киевской области предлагает Вам полный комплекс услуг по воспитанию и
-                    содержанию Вашей собаки. <br>
-
-                    -Ваш питомец нуждается в воспитании или корректировке поведения?<br>
-                    -Уезжаете, а пса не с кем оставить?<br>
-                    -Подготовить любимца к выставке?<br>
-                </p>
-            </h2>
+        <div class="inf" id="contacts">
+            <h2>Контакты</h2>
+            <h3>Киевская область,</h3>
+            <p>с. Дмитровка,</p>
+            <p>15 км от Киева,</p>
+            <p> по Житомирской трассе.</p>
+            <h3></h3>
         </div>
-        <div class="right_content">
-            <p><img class="icon_little" src="img/phone.png" alt="phone"> Phone: 093-33-55-844</p>
-            <p><img class="icon_little" src="img/email.png" alt="email"> Email: 3355844@gmail.com</p>
-            <form  onsubmit="tada()">
-                <h3>You can send message</h3>
-                <input type="text" placeholder="name">
-                <input type="textarea" class="textarea" placeholder="your message">
-                <input type="submit" class="button" value="Send">
-            </form>
-            <p>1234</p>
-            <p>1234</p>
-            <p>1234</p>
-            <p>1234</p>
+        <div class="inf" id="comments">
+            <h2>Comments</h2>
+        </div>
+        <div class="inf" id="books">
+            <h2>Some inf about books</h2>
+        </div>
+        <div class="inf" id="puppy">
+            <h2>Some inf about puppy</h2>
+        </div>
+        <div class="inf" id="care">
+            <h2>Some inf about care</h2>
+        </div>
+        <div class="inf" id="feeding">
+            <h2>Some inf about feeding</h2>
+        </div>
+        <div class="inf" id="rewards">
+            <h2>Some inf about rewards</h2>
         </div>
     </div>
-    <div class="footer"><a href="https://www.facebook.com/andrei.ponomarenko.18">© Ponomarenko A.M. 2017 </a></div>
-</div>
+    <div class="right">
+        <p><img class="button" src="img/phone.png" alt="phone"> Тел: 093-33-55-844</p>
+        <p><img class="button" src="img/email.png" alt="email"> Email: 3355844@gmail.com</p>
+        <form onsubmit="addComment()" id="message_form">
+            <h4>Отправить Нам сообщение</h4>
+            <!-- Add email -->
+            <!--<input type="email" class="form" id="comment_email" placeholder="Ваш електронный адресс">-->
+            <input type="text" class="form" id="comment_name" placeholder="Имя">
+            <textarea id="text_message" class="textarea form" placeholder="Сообщение"></textarea>
+            <input type="submit" class="submit" value="Отправить">
+        </form>
+    </div>
+</section>
+<section>
+    <!--<video id="video" src="video/promo.mp4" autoplay muted></video>-->
+</section>
+<footer><a href="https://www.facebook.com/andrei.ponomarenko.18">© Ponomarenko A.M. 2017 </a></footer>
 </body>
 </html>
