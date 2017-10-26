@@ -43,16 +43,17 @@ li {
 }
 
 .left p {
+    text-align: center;
     margin: 2px;
-    text-align: left;
-    border: 2px solid darkgrey;
+    padding: 3px;
+    border: 2px solid black;
     border-radius: 4px;
 }
 
 .left p:hover {
-    color: cornflowerblue;
+    color: black;
     border: 2px solid blue;
-    background-color: darkgrey;
+    background-color: white;
 }
 
 .ins_menu {
@@ -95,7 +96,7 @@ li {
 
 .button:hover {
     border-color: blue;
-    color: blue;
+    color: white;
 }
 
 .submit {
@@ -131,9 +132,14 @@ textarea {
 }
 
 .center {
+    font-family: "Courier New", Courier, monospace;
     box-sizing: border-box;
     float: left;
     width: 50%;
+}
+
+.center img {
+    border-radius: 20px;
 }
 
 .right {

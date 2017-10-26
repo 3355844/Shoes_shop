@@ -1,18 +1,25 @@
 
 $(document).ready(function () {
 
+    //hide all inf & show home
     $('.inf').hide();
     $('#home').show();
 
+    //Show left menu content
+    $('.ins_menu').bind('click', function () {
+        $('.inf').hide();
+        var classId = event.target.getAttribute('alt');
+        var showElement = $('#' + classId);
+        showElement.show('slow');
+    });
+
+    //Show nav panel content
     $('.nav_button img').bind('click', function (event) {
         $('.inf').hide();
         var classId = event.target.getAttribute('alt');
         var showElement = $('#' + classId);
-        console.log(showElement);
-        showElement.show();
-        // alert(showElement);
+        showElement.show('slow');
     });
-
 
     // Show hide left menu
     $('.ins_menu').hide();
